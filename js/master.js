@@ -33,35 +33,3 @@ function deleteTask(element) {
 function completeTask(element) {
   element.target.classList.toggle("completeTask");
 }
-
-/*
-function addTask() {
-  const inputValue = taskInput.value.trim();
-  const newTarea = document.createElement("li");
-  if (inputValue !== "") {
-    taskList.append(newTarea);
-    newTarea.textContent = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
-    newTarea.addEventListener("click", function () {
-      newTarea.remove();
-    });
-    taskInput.value = "";
-  } else {
-    alert("No ingresaste ninguna tarea");
-  }
-}
-*/
-
-//Echo en clase
-/*
-function addTask() {
-  let inputValue = taskInput.value;
-  const newTarea = document.createElement("li");
-  if (inputValue.trim().length > 0) {
-    taskList.append(newTarea);
-    newTarea.textContent = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
-    taskInput.value = "";
-  } else {
-    alert("No ingresaste ninguna tarea");
-  }
-}
-*/
