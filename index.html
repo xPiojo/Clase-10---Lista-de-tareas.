@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <!-- To do list - CRUD ==> Create - Read - Update - Delete -
+    ABM ==> Altas - Bajas Y Modificaciones  -->
+    <main>
+        <div class="container">
+            <h1>Lista Tareas</h1>
+            <h2>Con un <strong>"click"</strong>  marcas las tareas como completadas y con <strong>"doble click"</strong> las borras</h2>
+        </div>
+            
+        <div class="container">
+            <input type="text" name="taskInput" id="taskInput" placeholder="Nueva tarea">
+            <button id="addButton">Agregar tarea</button>
+        </div>
+    
+        <div class="tasks">
+            <ul id="taskList"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Ejercicio de javascript, de la clase 10, hecho por <strong><i>Roberto Gomez</i></strong>.</p>
+    </footer>
+
+    <script src="./js/master.js"></script>
+</body>
+</html>
