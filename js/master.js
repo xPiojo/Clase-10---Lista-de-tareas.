@@ -11,7 +11,7 @@ taskInput.addEventListener("keypress", (event) => {
   }
 });
 
-// Agregar tarea
+// Funcion para agregar tarea
 function addTask() {
   const inputValue = taskInput.value.trim();
   const newTarea = document.createElement("li");
@@ -25,7 +25,7 @@ function addTask() {
   }
 }
 
-// Borrar tarea
+// Función para borrar tarea
 function deleteTask(element) {
   const target = element.target;
   if (target.tagName == "LI") {
@@ -35,7 +35,7 @@ function deleteTask(element) {
   }
 }
 
-// Completar tarea
+// Función para Completar tarea
 function completeTask(element) {
   const target = element.target;
   if (target.tagName == "LI") {
@@ -43,7 +43,7 @@ function completeTask(element) {
   }
 }
 
-// Agrego funcion para filtrar por busqueda
+// Función para filtrar por busqueda
 const inputFilter = document.getElementById("search-Filter");
 inputFilter.addEventListener("keyup", filterTasks);
 
