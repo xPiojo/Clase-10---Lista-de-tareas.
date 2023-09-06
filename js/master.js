@@ -27,14 +27,20 @@ function addTask() {
 
 // Borrar tarea
 function deleteTask(element) {
-  if (confirm("Desea eliminar la tarea")) {
-    element.target.remove();
+  const target = element.target;
+  if (target.tagName == "LI") {
+    if (confirm("Desea eliminar la tarea")) {
+      element.target.remove();
+    }
   }
 }
 
 // Completar tarea
 function completeTask(element) {
-  element.target.classList.toggle("completeTask");
+  const target = element.target;
+  if (target.tagName == "LI") {
+    element.target.classList.toggle("completeTask");
+  }
 }
 
 // Agrego funcion para filtrar por busqueda
